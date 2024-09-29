@@ -1,0 +1,253 @@
+.Home {
+  background-image: url("/images/Bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.Top {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1.5rem;
+}
+
+.TopChild {
+  width: 100%;
+}
+
+.TopChildLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  position: relative; /* Establish positioning context */
+}
+
+.TopChildLeftWrap1 {
+  flex: 1; /* Allows it to grow/shrink */
+  max-width: 20%; /* Limit max width */
+}
+
+.TopChildLeftWrap2 {
+  flex: 2; /* Allows it to grow/shrink */
+  max-width: 50%; /* Limit max width */
+  position: relative; /* Set this to relative */
+}
+
+.TopChildLeftWrap3 {
+  position: absolute; /* Position it absolutely */
+  top: 50%; /* Center vertically relative to the parent */
+  left: 55%; /* Center horizontally relative to the parent */
+  transform: translate(-50%, -50%); /* Adjust to truly center */
+  flex: 1; /* Allows it to grow/shrink */
+  max-width: 10%; /* Limit max width */
+  display: flex;
+  justify-content: center; /* Center the content if needed */
+  align-items: center; /* Center vertically */
+}
+
+.TopChildLeftWrap4 {
+  position: absolute; /* Position it absolutely */
+  top: 50%; /* Center vertically relative to the parent */
+  left: 73%; /* Center horizontally relative to the parent */
+  transform: translate(-50%, -50%); /* Adjust to truly center */
+  flex: 1; /* Allows it to grow/shrink */
+  max-width: 10%; /* Limit max width */
+  display: flex;
+  justify-content: center; /* Center the content if needed */
+  align-items: center; /* Center vertically */
+}
+
+.TopChildMiddle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TopChildMiddleWrap {
+  flex: 1; /* Allows it to grow/shrink */
+  max-width: 70%; /* Limit max width */
+}
+
+.TopChildRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.TopChildRightWrap1 {
+  flex: 1; /* Allows it to grow/shrink */
+  max-width: 15%; /* Limit max width */
+}
+
+.BottomChildRight {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 1.5rem;
+  gap: 3rem;
+}
+
+.BottomChildRightWrap1 {
+  flex: 1; /* Allows it to grow/shrink */
+  max-width: 25%; /* Limit max width */
+}
+
+.BottomChildRightWrap2 {
+  flex: 1; /* Allows it to grow/shrink */
+  max-width: 57%; /* Limit max width */
+}
+
+.BottomChildLeft {
+  margin: 2rem 1.5rem;
+}
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+  .TopChildLeftWrap4 {
+    left: 74%;
+  }
+}
+
+@media (max-width: 1084px) {
+  .TopChildLeftWrap4 {
+    left: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .TopChildLeftWrap3 {
+    left: 58%;
+  }
+  .TopChildLeftWrap4 {
+    left: 76%;
+  }
+}
+
+@media (max-width: 890px) {
+  .TopChildLeftWrap4 {
+    left: 77%;
+  }
+}
+
+@media (max-width: 815px) {
+  .TopChildLeftWrap4 {
+    left: 78%;
+  }
+}
+
+@media (max-width: 768px) {
+  .TopChildLeftWrap3 {
+    left: 61%;
+  }
+  .TopChildLeftWrap4 {
+    left: 79%;
+  }
+}
+
+@media (max-width: 711px) {
+  .TopChildLeftWrap4 {
+    left: 80%;
+    max-width: 7%;
+  }
+}
+
+@media (max-width: 682px) {
+  .TopChildLeftWrap4 {
+    left: 81%;
+    max-width: 7%;
+  }
+}
+
+@media (max-width: 650px) {
+  .TopChildLeftWrap3 {
+    left: 64%;
+    top: 51%;
+  }
+  .TopChildLeftWrap4 {
+    left: 82%;
+    max-width: 7%;
+  }
+}
+
+@media (max-width: 620px) {
+  .TopChildLeftWrap4 {
+    left: 83%;
+    top: 51%;
+  }
+  .TopChildRight {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .TopChildLeftWrap3 {
+    left: 66%;
+    top: 54%;
+  }
+
+  .TopChildLeftWrap4 {
+    left: 84%;
+    top: 53%;
+  }
+}
+
+@media (max-width: 560px) {
+  .TopChildLeftWrap4 {
+    left: 85%;
+    top: 52%;
+  }
+}
+
+@media (max-width: 530px) {
+  .TopChildLeftWrap4 {
+    left: 86%;
+    top: 52%;
+  }
+}
+
+@media (max-width: 500px) {
+  .TopChildLeftWrap3 {
+    left: 58%;
+    top: 56%;
+  }
+  .TopChildLeftWrap4 {
+    left: 76%;
+    top: 50%;
+  }
+  .TopChildLeft {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .TopChildLeftWrap4 {
+    left: 77%;
+    top: 49%;
+  }
+}
+
+@media (max-width: 450px) {
+  .TopChildLeftWrap3 {
+    left: 57%;
+    top: 58%;
+  }
+  .TopChildLeftWrap4 {
+    left: 78%;
+  }
+}
+
+@media (max-width: 410px) {
+  .TopChildLeftWrap3 {
+    left: 61%;
+  }
+  .TopChildLeftWrap4 {
+    left: 79.5%;
+  }
+}
